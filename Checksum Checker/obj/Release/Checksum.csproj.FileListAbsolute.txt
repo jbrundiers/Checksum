@@ -1,0 +1,20 @@
+C:\Develop\5-Checksum\Checksum Checker\bin\Release\Checksum Checker.exe.config
+C:\Develop\5-Checksum\Checksum Checker\bin\Release\Checksum Checker.exe
+C:\Develop\5-Checksum\Checksum Checker\bin\Release\Checksum Checker.pdb
+C:\Develop\5-Checksum\Checksum Checker\obj\Release\Checksum.AboutBox.resources
+C:\Develop\5-Checksum\Checksum Checker\obj\Release\Checksum.mainForm.resources
+C:\Develop\5-Checksum\Checksum Checker\obj\Release\Checksum_Checker.Properties.Resources.resources
+C:\Develop\5-Checksum\Checksum Checker\obj\Release\Checksum.csproj.GenerateResource.cache
+C:\Develop\5-Checksum\Checksum Checker\obj\Release\Checksum.csproj.CoreCompileInputs.cache
+C:\Develop\5-Checksum\Checksum Checker\obj\Release\Checksum Checker.exe
+C:\Develop\5-Checksum\Checksum Checker\obj\Release\Checksum Checker.pdb
+D:\Develop\5-Checksum\Checksum Checker\bin\Release\Checksum Checker.exe.config
+D:\Develop\5-Checksum\Checksum Checker\bin\Release\Checksum Checker.exe
+D:\Develop\5-Checksum\Checksum Checker\bin\Release\Checksum Checker.pdb
+D:\Develop\5-Checksum\Checksum Checker\obj\Release\Checksum.AboutBox.resources
+D:\Develop\5-Checksum\Checksum Checker\obj\Release\Checksum.mainForm.resources
+D:\Develop\5-Checksum\Checksum Checker\obj\Release\Checksum_Checker.Properties.Resources.resources
+D:\Develop\5-Checksum\Checksum Checker\obj\Release\Checksum.csproj.GenerateResource.cache
+D:\Develop\5-Checksum\Checksum Checker\obj\Release\Checksum.csproj.CoreCompileInputs.cache
+D:\Develop\5-Checksum\Checksum Checker\obj\Release\Checksum Checker.exe
+D:\Develop\5-Checksum\Checksum Checker\obj\Release\Checksum Checker.pdb

@@ -1,0 +1,8 @@
+D:\Develop\5-Checksum\Checksum Checker\bin\Debug\Checksum Checker.exe.config
+D:\Develop\5-Checksum\Checksum Checker\bin\Debug\Checksum Checker.exe
+D:\Develop\5-Checksum\Checksum Checker\bin\Debug\Checksum Checker.pdb
+D:\Develop\5-Checksum\Checksum Checker\obj\Debug\Checksum_Checker.mainForm.resources
+D:\Develop\5-Checksum\Checksum Checker\obj\Debug\Checksum_Checker.Properties.Resources.resources
+D:\Develop\5-Checksum\Checksum Checker\obj\Debug\Checksum Checker.csproj.GenerateResource.Cache
+D:\Develop\5-Checksum\Checksum Checker\obj\Debug\Checksum Checker.exe
+D:\Develop\5-Checksum\Checksum Checker\obj\Debug\Checksum Checker.pdb
