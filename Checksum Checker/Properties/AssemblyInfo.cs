@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MD5/SHA1 Checksum")]
-[assembly: AssemblyDescription("Calculate MD5/SHA1 checksum of a file")]
+[assembly: AssemblyTitle("MD5/SHA1/SHA256 Checksum")]
+[assembly: AssemblyDescription("Calculate MD5/SHA1/SHA256 checksum of a file")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Soft Toolware")]
+[assembly: AssemblyCompany("SoftToolware")]
 [assembly: AssemblyProduct("Checksum")]
-[assembly: AssemblyCopyright("Copyright © 2021 Soft Toolware")]
+[assembly: AssemblyCopyright("Copyright © 2022 Soft-Toolware")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.1.0.1")]
-[assembly: AssemblyFileVersion("1.1.0.1")]
+[assembly: AssemblyVersion("1.2.0.1")]
+[assembly: AssemblyFileVersion("1.2.0.1")]

@@ -244,9 +244,10 @@ namespace Checksum {
 
                 if (rbtnMD5.Checked)
                     hasher = MD5.Create();
-                else
+                else if (rbtnSHA1.Checked)
                     hasher = SHA1.Create();
-
+                else
+                    hasher = SHA256.Create();
 
                 //using (HashAlgorithm hasher = MD5.Create())
                 using (hasher)

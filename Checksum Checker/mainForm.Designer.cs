@@ -54,7 +54,9 @@
             this.groupBoxCalculated = new System.Windows.Forms.GroupBox();
             this.rbtnMD5 = new System.Windows.Forms.RadioButton();
             this.rbtnSHA1 = new System.Windows.Forms.RadioButton();
+            this.rbtnSHA256 = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBoxCompare.SuspendLayout();
             this.groupBoxCalculated.SuspendLayout();
@@ -79,17 +81,17 @@
             // 
             // textboxComputedHash
             // 
-            this.textboxComputedHash.Location = new System.Drawing.Point(184, 10);
+            this.textboxComputedHash.Location = new System.Drawing.Point(118, 86);
             this.textboxComputedHash.Name = "textboxComputedHash";
             this.textboxComputedHash.ReadOnly = true;
-            this.textboxComputedHash.Size = new System.Drawing.Size(250, 20);
+            this.textboxComputedHash.Size = new System.Drawing.Size(422, 20);
             this.textboxComputedHash.TabIndex = 0;
             this.textboxComputedHash.Text = "12345678901234567890123456789012345";
             // 
             // labelComputedHash
             // 
             this.labelComputedHash.AutoSize = true;
-            this.labelComputedHash.Location = new System.Drawing.Point(6, 13);
+            this.labelComputedHash.Location = new System.Drawing.Point(11, 89);
             this.labelComputedHash.Name = "labelComputedHash";
             this.labelComputedHash.Size = new System.Drawing.Size(86, 13);
             this.labelComputedHash.TabIndex = 2;
@@ -97,7 +99,7 @@
             // 
             // buttonSelectFileDialog
             // 
-            this.buttonSelectFileDialog.Location = new System.Drawing.Point(573, 72);
+            this.buttonSelectFileDialog.Location = new System.Drawing.Point(576, 74);
             this.buttonSelectFileDialog.Name = "buttonSelectFileDialog";
             this.buttonSelectFileDialog.Size = new System.Drawing.Size(119, 23);
             this.buttonSelectFileDialog.TabIndex = 3;
@@ -107,7 +109,7 @@
             // 
             // buttonCalculateHash
             // 
-            this.buttonCalculateHash.Location = new System.Drawing.Point(573, 113);
+            this.buttonCalculateHash.Location = new System.Drawing.Point(561, 51);
             this.buttonCalculateHash.Name = "buttonCalculateHash";
             this.buttonCalculateHash.Size = new System.Drawing.Size(119, 23);
             this.buttonCalculateHash.TabIndex = 3;
@@ -129,7 +131,7 @@
             // 
             // buttonCancelHash
             // 
-            this.buttonCancelHash.Location = new System.Drawing.Point(573, 113);
+            this.buttonCancelHash.Location = new System.Drawing.Point(561, 51);
             this.buttonCancelHash.Name = "buttonCancelHash";
             this.buttonCancelHash.Size = new System.Drawing.Size(119, 23);
             this.buttonCancelHash.TabIndex = 5;
@@ -140,14 +142,16 @@
             // 
             // progressBarBytesRead
             // 
-            this.progressBarBytesRead.Location = new System.Drawing.Point(15, 110);
+            this.progressBarBytesRead.Location = new System.Drawing.Point(118, 51);
             this.progressBarBytesRead.Name = "progressBarBytesRead";
-            this.progressBarBytesRead.Size = new System.Drawing.Size(431, 23);
+            this.progressBarBytesRead.Size = new System.Drawing.Size(316, 23);
             this.progressBarBytesRead.TabIndex = 6;
             // 
             // textBoxCurrentByteCount
             // 
-            this.textBoxCurrentByteCount.Location = new System.Drawing.Point(455, 113);
+            this.textBoxCurrentByteCount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.textBoxCurrentByteCount.CausesValidation = false;
+            this.textBoxCurrentByteCount.Location = new System.Drawing.Point(440, 53);
             this.textBoxCurrentByteCount.Name = "textBoxCurrentByteCount";
             this.textBoxCurrentByteCount.ReadOnly = true;
             this.textBoxCurrentByteCount.Size = new System.Drawing.Size(100, 20);
@@ -168,7 +172,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(707, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(728, 24);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -183,7 +187,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -207,9 +211,9 @@
             this.groupBoxCompare.Controls.Add(this.buttonCompareHash);
             this.groupBoxCompare.Controls.Add(this.labelHashToCompare);
             this.groupBoxCompare.Controls.Add(this.textboxHashToCompare);
-            this.groupBoxCompare.Location = new System.Drawing.Point(12, 182);
+            this.groupBoxCompare.Location = new System.Drawing.Point(15, 245);
             this.groupBoxCompare.Name = "groupBoxCompare";
-            this.groupBoxCompare.Size = new System.Drawing.Size(680, 38);
+            this.groupBoxCompare.Size = new System.Drawing.Size(696, 38);
             this.groupBoxCompare.TabIndex = 10;
             this.groupBoxCompare.TabStop = false;
             // 
@@ -226,7 +230,7 @@
             // labelHashToCompare
             // 
             this.labelHashToCompare.AutoSize = true;
-            this.labelHashToCompare.Location = new System.Drawing.Point(6, 14);
+            this.labelHashToCompare.Location = new System.Drawing.Point(14, 15);
             this.labelHashToCompare.Name = "labelHashToCompare";
             this.labelHashToCompare.Size = new System.Drawing.Size(95, 13);
             this.labelHashToCompare.TabIndex = 3;
@@ -234,26 +238,35 @@
             // 
             // textboxHashToCompare
             // 
-            this.textboxHashToCompare.Location = new System.Drawing.Point(187, 12);
+            this.textboxHashToCompare.Location = new System.Drawing.Point(121, 12);
             this.textboxHashToCompare.Name = "textboxHashToCompare";
-            this.textboxHashToCompare.Size = new System.Drawing.Size(247, 20);
+            this.textboxHashToCompare.Size = new System.Drawing.Size(419, 20);
             this.textboxHashToCompare.TabIndex = 1;
             this.textboxHashToCompare.Text = "12345678901234567890123456789012345";
             // 
             // groupBoxCalculated
             // 
+            this.groupBoxCalculated.Controls.Add(this.label2);
+            this.groupBoxCalculated.Controls.Add(this.rbtnSHA256);
+            this.groupBoxCalculated.Controls.Add(this.label1);
+            this.groupBoxCalculated.Controls.Add(this.textBoxCurrentByteCount);
+            this.groupBoxCalculated.Controls.Add(this.rbtnSHA1);
             this.groupBoxCalculated.Controls.Add(this.textboxComputedHash);
+            this.groupBoxCalculated.Controls.Add(this.progressBarBytesRead);
+            this.groupBoxCalculated.Controls.Add(this.rbtnMD5);
             this.groupBoxCalculated.Controls.Add(this.labelComputedHash);
-            this.groupBoxCalculated.Location = new System.Drawing.Point(12, 142);
+            this.groupBoxCalculated.Controls.Add(this.buttonCalculateHash);
+            this.groupBoxCalculated.Controls.Add(this.buttonCancelHash);
+            this.groupBoxCalculated.Location = new System.Drawing.Point(15, 114);
             this.groupBoxCalculated.Name = "groupBoxCalculated";
-            this.groupBoxCalculated.Size = new System.Drawing.Size(680, 34);
+            this.groupBoxCalculated.Size = new System.Drawing.Size(693, 115);
             this.groupBoxCalculated.TabIndex = 11;
             this.groupBoxCalculated.TabStop = false;
             // 
             // rbtnMD5
             // 
             this.rbtnMD5.AutoSize = true;
-            this.rbtnMD5.Location = new System.Drawing.Point(573, 27);
+            this.rbtnMD5.Location = new System.Drawing.Point(121, 16);
             this.rbtnMD5.Name = "rbtnMD5";
             this.rbtnMD5.Size = new System.Drawing.Size(48, 17);
             this.rbtnMD5.TabIndex = 12;
@@ -264,7 +277,7 @@
             // rbtnSHA1
             // 
             this.rbtnSHA1.AutoSize = true;
-            this.rbtnSHA1.Location = new System.Drawing.Point(639, 27);
+            this.rbtnSHA1.Location = new System.Drawing.Point(186, 16);
             this.rbtnSHA1.Name = "rbtnSHA1";
             this.rbtnSHA1.Size = new System.Drawing.Size(53, 17);
             this.rbtnSHA1.TabIndex = 13;
@@ -272,33 +285,46 @@
             this.rbtnSHA1.Text = "SHA1";
             this.rbtnSHA1.UseVisualStyleBackColor = true;
             // 
+            // rbtnSHA256
+            // 
+            this.rbtnSHA256.AutoSize = true;
+            this.rbtnSHA256.Location = new System.Drawing.Point(281, 16);
+            this.rbtnSHA256.Name = "rbtnSHA256";
+            this.rbtnSHA256.Size = new System.Drawing.Size(65, 17);
+            this.rbtnSHA256.TabIndex = 15;
+            this.rbtnSHA256.TabStop = true;
+            this.rbtnSHA256.Text = "SHA256";
+            this.rbtnSHA256.UseVisualStyleBackColor = true;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(474, 27);
+            this.label1.Location = new System.Drawing.Point(11, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 13);
             this.label1.TabIndex = 14;
             this.label1.Text = "Hash Algorithm:";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(11, 56);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(51, 13);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Progress:";
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(707, 237);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.rbtnSHA1);
-            this.Controls.Add(this.rbtnMD5);
+            this.ClientSize = new System.Drawing.Size(728, 307);
             this.Controls.Add(this.groupBoxCalculated);
             this.Controls.Add(this.groupBoxCompare);
             this.Controls.Add(this.textBoxTotalByteCount);
-            this.Controls.Add(this.textBoxCurrentByteCount);
-            this.Controls.Add(this.progressBarBytesRead);
             this.Controls.Add(this.buttonSelectFileDialog);
             this.Controls.Add(this.labelFilePath);
             this.Controls.Add(this.textboxFilePath);
-            this.Controls.Add(this.buttonCalculateHash);
-            this.Controls.Add(this.buttonCancelHash);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -343,9 +369,11 @@
         private System.Windows.Forms.Label labelHashToCompare;
         private System.Windows.Forms.TextBox textboxHashToCompare;
         private System.Windows.Forms.GroupBox groupBoxCalculated;
-        private System.Windows.Forms.RadioButton rbtnMD5;
-        private System.Windows.Forms.RadioButton rbtnSHA1;
+        private System.Windows.Forms.RadioButton rbtnSHA256;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RadioButton rbtnSHA1;
+        private System.Windows.Forms.RadioButton rbtnMD5;
+        private System.Windows.Forms.Label label2;
     }
 }
 
